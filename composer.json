@@ -1,0 +1,37 @@
+{
+    "name": "flysion/laravel-value",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lixx",
+            "email": "sss60@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/framework": "^7.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flysion\\Value\\": "src/"
+        },
+        "files": [
+
+        ]
+    },
+    "require-dev": {
+
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Flysion\\Value\\ServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
