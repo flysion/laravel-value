@@ -3,7 +3,14 @@
 # example
 
 ```php
-use Flysion\Value\_AND;use Flysion\Value\_OR;use Flysion\Value\ContextValue;use Flysion\Value\EQ;use Flysion\Value\ExecValue;use Flysion\Value\GE;use Flysion\Value\GT;use Flysion\Value\IN;
+use Flysion\Value\_AND;
+use Flysion\Value\_OR;
+use Flysion\Value\ContextValue;
+use Flysion\Value\EQ;
+use Flysion\Value\ExecValue;
+use Flysion\Value\GE;
+use Flysion\Value\GT;
+use Flysion\Value\IN;
 
 $context = [
     'userInfo' => new ExecValue(function() {
