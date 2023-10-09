@@ -1,7 +1,10 @@
 # laravel-value
 
 # example
+
 ```php
+use Flysion\Value\_AND;use Flysion\Value\_OR;use Flysion\Value\ContextValue;use Flysion\Value\EQ;use Flysion\Value\ExecValue;use Flysion\Value\GE;use Flysion\Value\GT;use Flysion\Value\IN;
+
 $context = [
     'userInfo' => new ExecValue(function() {
         return [
@@ -26,10 +29,10 @@ $and2 = new _AND([
 
 $or = new _OR([$and1, $and2]);
 
-$cond = toString($or, $context);
+$cond = $or->toString($context);
 // ((`userInfo.level` > 10 and `userInfo.nickname` == null) or (`userInfo.age` >= 18 and `userInfo.vip` == 6 and `userInfo.gender` in ["1","2"]))
 
-$result = \App\Services\Value\value($or, $context);
+$result = $or->value($context);
 // true
 
 dd($cond, $result, $context);

@@ -5,7 +5,7 @@ namespace Flysion\Value;
 function value($value, &$context)
 {
     if ($value instanceof Value) {
-        return value($value->value($context), $context);
+        return $value->value($context);
     }
 
     return $value;
